@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💡 Brainstorm Zone</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+        .neev, .pillar { margin: 20px; padding: 15px; border: 2px solid #333; display: inline-block; cursor: pointer; }
+        .hidden { display: none; text-align: left; margin-top: 20px; }
+        footer { margin-top: 30px; padding: 10px; background: #f4f4f4; }
+    </style>
+</head>
+<body>
+    <h1>💡 Brainstorm Zone</h1>
+    
+    <h2>👑 Strong Minds - The Foundation 🏛</h2>
+    <ul>
+        <li class="neev" onclick="showContent('brain')">🌱 Roots: Strong Minds !!!</li>
+    </ul>
+    
+    <h2>🌍 The Growth Path</h2>
+    <ul>
+        <li class="pillar" onclick="showContent('conceptMapping')">🚩 Stem: Concept Mapping</li>
+        <li class="pillar" onclick="showContent('realWorld')">🌳 Branches: Real-World Connection</li>
+        <li class="pillar" onclick="showContent('interactiveThinking')">🔄 Leaves: Interactive Thinking 🌿</li>
+    </ul>
+    
+    <h2>🛣️ Highway: Pathway to Clarity</h2>
+    
+    <div id="brain" class="hidden">
+        <h3>🌱 Roots: What is Strong Minds?</h3>
+        <ul>
+            <li>Strong minds form the deep roots of knowledge and understanding.</li>
+            <li>Like a tree, strong roots provide stability and growth for ideas.</li>
+        </ul>
+    </div>
+    
+    <div id="conceptMapping" class="hidden">
+        <h3>🚩 Stem: Concept Mapping</h3>
+        <p>Concept mapping visually connects ideas, much like a structured framework providing pathways to knowledge.</p>
+        <ul>
+            <li>Forms a solid base for structured learning.</li>
+            <li>Expands from a central idea to detailed branches.</li>
+        </ul>
+    </div>
+    
+    <div id="realWorld" class="hidden">
+        <h3>🌳 Branches: Real-World Connection</h3>
+        <p>Branches spread ideas by linking knowledge to real-world applications.</p>
+        <ul>
+            <li>Understanding concepts by relating them to practical scenarios.</li>
+            <li>Example: A computer program is structured like a tree storing hierarchical data.</li>
+        </ul>
+    </div>
+    
+    <div id="interactiveThinking" class="hidden">
+        <h3>🔄 Leaves: Interactive Thinking 🌿</h3>
+        <p>Leaves absorb (ideas), process (think), and release (express) insights.</p>
+        <ul>
+            <li>Encourages exploration and idea expansion.</li>
+            <li>Example: In chess, each move builds upon past decisions, refining strategy.</li>
+        </ul>
+    </div>
+
+    <div id="highway" class="hidden">
+        <h3>🛣️ Highway: Pathway to Clarity</h3>
+        <p>The highway is the structured path that connects core ideas efficiently.</p>
+        <ul>
+            <li>Acts as a roadmap to connect thoughts without confusion.</li>
+            <li>Finds the shortest and most effective way to link ideas.</li>
+        </ul>
+    </div>
+    
+    <footer>
+        <button onclick="location.href='references.html'">📚 References</button>
+        <p>&copy; 2025 Brainstorm Zone. All Rights Reserved.</p>
+        <p>Rukunga nahi.. hargiz nahi !!!</p>
+    </footer>
+    
+    <script>
+        function showContent(id) {
+            document.querySelectorAll('.hidden').forEach(div => div.style.display = 'none');
+            document.getElementById(id).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
